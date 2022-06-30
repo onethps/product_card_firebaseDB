@@ -1,0 +1,32 @@
+.root {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .textBlock{
+    flex: 2;
+  }
+
+
+  & img {
+    background-color: red;
+    object-fit:cover;
+    min-width: 200px;
+    height: 150px;
+    flex: 1;
+    border-radius: 20px;
+  }
+
+  .countBlock{
+    display: flex;
+    margin-right: 50px;
+    gap: 20px;
+    flex: 1;
+  }
+
+}

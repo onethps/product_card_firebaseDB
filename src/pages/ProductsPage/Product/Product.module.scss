@@ -1,0 +1,52 @@
+@import "src/styles/variables";
+
+.productBg {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.productPhoto {
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  height: 150px;
+}
+
+.productDesc {
+  padding: 5px 10px;
+
+  .priceBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  & h3 {
+    margin: 5px 0;
+  }
+
+  & h4 {
+    margin: 0;
+    color: black;
+    opacity: 0.5;
+  }
+
+  & h2 {
+    display: inline;
+  }
+
+  & button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: $buttonBg;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+}

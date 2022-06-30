@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+
+.root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      width: 50%;
+      margin: 0 auto;
+      height: 5px;
+      border-radius: 20px;
+      background-color: $buttonBg;
+    }
+  }
+
+  .items {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

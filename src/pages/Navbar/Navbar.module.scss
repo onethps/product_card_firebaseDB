@@ -1,0 +1,66 @@
+@import "src/styles/variables";
+
+.root {
+  width: 100%;
+  background-color: $navBarBg;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  align-items: center;
+
+
+  & span{
+    margin-right: 20px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+  .buttonBlock {
+    position: relative;
+
+    & button {
+      border: none;
+      background-color: $buttonBg;
+      color: white;
+      padding: 10px 40px;
+      border-radius: 10px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+
+    .countBlock {
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      background-color: white;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+
+
+      & span {
+        margin: 0 auto;
+        color: black;
+        font-weight: 800;
+
+      }
+
+    }
+
+
+  }
+
+
+
+
+
+
+
+}
