@@ -24,7 +24,7 @@ const SubmitOrder = () => {
         <input className={errors.surname ? s.active : ''} placeholder={'Surname'} {...register("surname", { required: true })} />
         <input className={errors.address ? s.active : ''} placeholder={'Address'} {...register("address", { required: true })} />
         <input  className={errors.phone ? s.active : ''} placeholder={'Phone'} {...register("phone", { required: true })} />
-        <input type="submit" />
+        <input type="submit" value={'KAKARASH'}/>
       </form>
     </>
   );

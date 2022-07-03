@@ -33,7 +33,7 @@ export const cartSlice = createSlice({
       const findInx = state.items.findIndex(obj => obj.id === action.payload.id)
       if (findItem) {
         findItem.count--;
-        if (findItem.count < 0) {
+        if (findItem.count <= 0) {
           state.items.splice(findInx, 1)
         }
       }

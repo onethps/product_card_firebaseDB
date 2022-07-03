@@ -10,7 +10,6 @@ export type IProduct = {
   photo: string
   id:string
   count:number
-
 }
 
 type initProductType = {

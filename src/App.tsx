@@ -7,15 +7,15 @@ import AppRoutes from "routes/AppRoutes";
 
 function App() {
   const dispatch = useAppDispatch()
-console.log('app')
+
   useEffect(() => {
-    console.log('use effect')
+
     dispatch(setProductsTC())
   }, []);
 
   return (
     <>
-      {console.log('renderComp')}
+
       <Navbar />
       <AppRoutes/>
     </>
